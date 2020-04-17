@@ -64,7 +64,7 @@ def sample_recognize(local_file_path):
     for result in response.results:
         # First alternative is the most probable result
         alternative = result.alternatives[0]
-        print(u"Transcript: {}".format(alternative.transcript))
+        print(alternative.transcript)
 
 
 # [END speech_transcribe_enhanced_model]
@@ -77,7 +77,7 @@ def main():
     #parser.add_argument("--local_file_path", type=str, default="resources/hello.wav")
     #args = parser.parse_args()
 
-    sample_recognize("Data/WhatsApp Audio 2020-04-16 at 13.26.55.wav")
+    sample_recognize("Data/Dual_Channel/WhatsApp Audio 2020-04-16 at 13.26.55.wav")
 
 
 if __name__ == "__main__":
